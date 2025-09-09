@@ -65,15 +65,15 @@ const Contact: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-20">
           {/* Contact Information */}
-          <div className="space-y-8">
+          <div className="w-full lg:w-1/2 space-y-8">
             <div>
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
                 Let's Talk
               </h3>
               <p className="text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
-                I'm always excited to discuss new opportunities, collaborate on interesting projects, 
+                I'm always excited to discuss new opportunities, collaborate on interesting projects,
                 or simply have a conversation about web development and technology. Feel free to reach out!
               </p>
             </div>
@@ -102,7 +102,7 @@ const Contact: React.FC = () => {
             {/* Social Links */}
             <div>
               <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Connect With Me</h4>
-              <div className="flex gap-4">
+              <div className="flex flex-wrap gap-4">
                 {socialLinks.map((social, index) => (
                   <a
                     target='_blank'
@@ -123,7 +123,7 @@ const Contact: React.FC = () => {
                 <Mail size={18} />
                 Hire Me
               </button>
-              
+
               <button className="px-6 py-3 border-2 border-blue-600 text-blue-600 dark:text-blue-400 hover:bg-blue-600 hover:text-white dark:hover:text-white font-semibold rounded-lg transition-colors duration-200 flex items-center justify-center gap-2">
                 <Download size={18} />
                 Download Resume
@@ -131,11 +131,16 @@ const Contact: React.FC = () => {
             </div>
           </div>
 
-
-            <div>
-              <img src="/bg.png" alt="" />
+          {/* Profile Image */}
+          <div className="w-full lg:w-1/2 flex justify-center lg:justify-end mt-10 lg:mt-0">
+            <div className="aspect-square w-50 sm:w-56 md:w-64 lg:w-80">
+              <img
+                src="/bg.png"
+                alt="profile"
+                className="w-full h-full object-cover rounded-xl shadow-lg border border-gray-200 dark:border-gray-700"
+              />
             </div>
-         
+          </div>
         </div>
       </div>
     </section>
