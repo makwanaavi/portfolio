@@ -41,9 +41,9 @@ const Experience: React.FC = () => {
           <div className="w-20 h-1 bg-blue-600 mx-auto rounded-full"></div>
         </div>
 
-        <div className="space-y-8">
+        <div className="space-y-8 grid grid-flow-row" >
           {experiences.map((exp, index) => (
-            <div key={index} className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-sm">
+            <div key={index} className=" max-h-full bg-white dark:bg-gray-900 p-8 rounded-xl shadow-sm border border-blue-500/50">
               <div className="flex flex-wrap items-start justify-between mb-6">
                 <div>
                   <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">

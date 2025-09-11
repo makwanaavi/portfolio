@@ -1,14 +1,13 @@
 import React from 'react';
-import { Github, Linkedin, Instagram, Facebook, Twitter, ExternalLink, Download } from 'lucide-react';
+import { Github, Linkedin, Instagram, Facebook, Twitter, Download } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const socialLinks = [
     { icon: Github, url: 'https://github.com/makwanaavi', label: 'GitHub' },
     { icon: Linkedin, url: 'https://www.linkedin.com/in/avi-makwana-47562b315/', label: 'LinkedIn' },
-    { icon: Instagram, url: '#', label: 'Instagram' },
-    { icon: Facebook, url: '#', label: 'Facebook' },
-    { icon: Twitter, url: '#', label: 'Twitter' },
-    { icon: ExternalLink, url: '#', label: 'Portfolio' },
+    { icon: Instagram, url: 'https://www.instagram.com/avi_makwana_00/', label: 'Instagram' },
+    { icon: Facebook, url: 'https://www.facebook.com/avi.makwana.2025?rdid=S69ojuUwfxCExfcS&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F14FCapGUGmF%2F#', label: 'Facebook' },
+    { icon: Twitter, url: 'https://x.com/AviMakwana26843', label: 'Twitter' },
   ];
 
   return (
