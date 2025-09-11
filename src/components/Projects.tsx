@@ -78,7 +78,7 @@ const Projects: React.FC = () => {
         </div>
 
         {/* Filter Buttons */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        <div className="flex flex-wrap whitespace-nowrap justify-center gap-4 mb-12">
           {categories.map((category) => (
             <button
               key={category}
