@@ -135,9 +135,7 @@ const Projects: React.FC = () => {
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white">
                     {project.title}
                   </h3>
-                  <span className="text-xs px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-400 rounded-full">
-                    {project.category}
-                  </span>
+                 
                 </div>
                 
                 <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">

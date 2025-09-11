@@ -128,7 +128,9 @@ const Education: React.FC = () => {
                     <h4 className="text-lg font-semibold text-gray-900 dark:text-white">
                       {cert.title}
                     </h4>
-                    <span className="text-xs px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-white rounded-full">
+                    <span className="text-xs px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-white rounded-full
+                      sm:text-xs sm:px-2 sm:py-1
+                      text-[10px] px-1.5 py-0.5 min-w-[90px] flex items-center justify-center text-center">
                       {cert.type}
                     </span>
                   </div>
